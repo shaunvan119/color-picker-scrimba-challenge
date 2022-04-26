@@ -12,7 +12,7 @@ function handleClick(event) {
 }
 
 async function getColorScheme(_seedColor, _mode) {
-    // don't fetch if seedColor and mode hasn't been changed
+    
     if (seedColor === _seedColor && mode === _mode) {
         console.log("Seed color and mode hasn't been changed.")
         return
@@ -30,7 +30,7 @@ async function getColorScheme(_seedColor, _mode) {
         
         paint(colors)
 
-        // remember current seed color and mode for next fetch
+        
         seedColor = _seedColor
         mode = _mode
     } catch(err) {
@@ -88,25 +88,9 @@ colorNames.forEach(button => {
     button.addEventListener("click", copyToClipboard)
 })
 
-// Paint initial colors
+
 colorInput.value = colors[0]
 paint(colors)
 
-//fetch("https://www.thecolorapi.com/scheme?hex=0047AB")
-  // .then(res => res.json())
-    //.then(data => {
-      //  console.log(data)
-        //document.getElementById("container").innerHTML = `
-        //<img src="${data.image}" />
-        //`
-        //})
 
-    //fetch("https://www.thecolorapi.com/scheme?hex=0047AB")
-    //.then(response => response.json())
-    //.then(data => {
-      //  console.log(data)
-       // document.getElementById("container").innerHTML = `
-         //   <img src="${data.mode}" />
-        //`
-    //})
 
