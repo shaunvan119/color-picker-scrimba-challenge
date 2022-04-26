@@ -1,10 +1,11 @@
 body {
     margin-top: 4rem;
     font-family: 'Inter', sans-serif;
+    background: rgb(223, 214, 214)
 
 }
 
-.container {
+#container {
     background: rgb(192, 192, 212);
     color: #D5D4D8;
     width: 100%;
@@ -121,35 +122,35 @@ margin: 5px;
 .color-one {
     width: 110px;
     height: 550px;
-    background-color: #F55A5A;
+  
 
 }
 
 .color-two {
     width: 110px;
     height: 550px;
-    background-color: #2B283A;
+    
 
 }
 
 .color-three {
     width: 110px;
     height: 550px;
-    background-color: #FBF3AB;
+    
 
 }
 
 .color-four {
     width: 110px;
     height: 550px;
-    background-color: #AAD1B6;
+    
 
 }
 
 .color-five {
     width: 110px;
     height: 550px;
-    background-color: #A626D3;
+    
 
 }
 
@@ -174,13 +175,14 @@ Typography
 
 @media (max-width: 600px) {
     body {
-        background-color: blue;
-        margin-top: 0;
+        background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+        margin: 1.5rem;
+        
         
     }
 
     .select-box {
-        width: 250px;
+        width: 230px;
     }
     
     
